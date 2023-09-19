@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -128.44444444444434,
-    "scrollLeft": -175.33333333333337,
+    "scrollTop": -134.44444444444454,
+    "scrollLeft": -183.33333333333337,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": false,
@@ -182,7 +182,7 @@
           "active": false,
           "left": 153.1421,
           "top": 107.9627,
-          "zIndex": 12,
+          "zIndex": 11,
           "widthName": 60,
           "widthComment": 60,
           "color": "rgba(0,0,0,0)"
@@ -604,10 +604,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 698.2565,
           "top": 162.3961,
-          "zIndex": 17,
+          "zIndex": 15,
           "widthName": 60,
           "widthComment": 60
         },
@@ -876,7 +876,7 @@
           "active": false,
           "left": 946.7562,
           "top": 172.3218,
-          "zIndex": 4,
+          "zIndex": 3,
           "widthName": 62,
           "widthComment": 60
         },
@@ -961,7 +961,7 @@
           "active": false,
           "left": 499.6227,
           "top": 486.1671,
-          "zIndex": 6,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1115,7 +1115,7 @@
           "active": false,
           "left": 213.3516,
           "top": 455.5723,
-          "zIndex": 11,
+          "zIndex": 10,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1223,7 +1223,7 @@
           "active": false,
           "left": 247.0242,
           "top": 746.6543,
-          "zIndex": 7,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1256,6 +1256,29 @@
               "widthDefault": 60
             },
             "id": "b2aa00f3-43fd-468c-aed5-117b3b3388af"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d547b444-fc34-45c3-973b-17ff96a8381b"
           },
           {
             "name": "transporter",
@@ -1308,7 +1331,7 @@
           "active": false,
           "left": 497.7075,
           "top": 787.4974,
-          "zIndex": 8,
+          "zIndex": 20,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1316,7 +1339,7 @@
         "id": "7f5f8690-ff96-4436-a3c1-d43fbbdb1bd7"
       },
       {
-        "name": "coache",
+        "name": "coach",
         "comment": "",
         "columns": [
           {
@@ -1343,7 +1366,7 @@
             "id": "be55bb71-fc88-4507-b754-062b10396118"
           },
           {
-            "name": "type",
+            "name": "number",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -1363,7 +1386,7 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "878ebad9-4cf5-4471-9ee7-93d4c34a3089"
+            "id": "b9c24741-e7f5-4ca9-a5cc-9517cec61a31"
           },
           {
             "name": "train_id",
@@ -1387,13 +1410,36 @@
               "widthDefault": 60
             },
             "id": "e2d24aee-a71d-45e7-9265-4258e5ad37e1"
+          },
+          {
+            "name": "coach_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 86,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b8b4bf45-86f9-4e13-997a-9776f8c6cd08"
           }
         ],
         "ui": {
           "active": false,
           "left": 712.2434,
           "top": 787.4756,
-          "zIndex": 9,
+          "zIndex": 134,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1428,6 +1474,29 @@
             "id": "f6e1c2b0-7b0d-49db-ab37-c57fdd2c610c"
           },
           {
+            "name": "number",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f38d48e3-9812-4237-b208-f5f4d9d42fdc"
+          },
+          {
             "name": "type",
             "comment": "",
             "dataType": "",
@@ -1449,36 +1518,13 @@
               "widthDefault": 60
             },
             "id": "fc82f81d-915e-420d-b37b-f6b02a8ec0db"
-          },
-          {
-            "name": "coach_id",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "aa474367-cb2f-4b17-8eb9-9520a252da7a"
           }
         ],
         "ui": {
           "active": false,
-          "left": 917.8423,
-          "top": 787.6942,
-          "zIndex": 10,
+          "left": 1202.2882,
+          "top": 590.6579,
+          "zIndex": 142,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1540,7 +1586,7 @@
           "active": false,
           "left": 633.9194,
           "top": 36.4329,
-          "zIndex": 15,
+          "zIndex": 14,
           "widthName": 105,
           "widthComment": 60
         },
@@ -1809,7 +1855,7 @@
           "active": false,
           "left": 947.6478,
           "top": 482.9652,
-          "zIndex": 5,
+          "zIndex": 82,
           "widthName": 66,
           "widthComment": 60
         },
@@ -1871,7 +1917,7 @@
           "active": false,
           "left": 844.5934,
           "top": 36.3888,
-          "zIndex": 14,
+          "zIndex": 13,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1933,12 +1979,136 @@
           "active": false,
           "left": 438.1665,
           "top": 36.2778,
-          "zIndex": 13,
+          "zIndex": 12,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "0d252964-af55-42a6-a6f4-b11a84619f5b"
+      },
+      {
+        "name": "coach_type_with_seat",
+        "comment": "",
+        "columns": [
+          {
+            "name": "seat_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "622d7f85-c7cb-4aff-8957-5e68032a8ae6"
+          },
+          {
+            "name": "coach_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 86,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cd4df61a-d343-4262-a833-758326fc642e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1179.333,
+          "top": 808.1484,
+          "zIndex": 141,
+          "widthName": 131,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "05ffc0ed-1ebe-4b32-957a-6c7816ebc771"
+      },
+      {
+        "name": "coach_type",
+        "comment": "",
+        "columns": [
+          {
+            "name": "coach_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "90fd615b-535a-45fe-bd1f-4c62420b31d0"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a5e4fff9-2752-4826-8830-dc8181d22311"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 946.2214,
+          "top": 808.0742,
+          "zIndex": 135,
+          "widthName": 69,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "40f294ab-1e69-480f-ac88-549e3130d0bd"
       }
     ],
     "indexes": []
@@ -2166,7 +2336,7 @@
             "b2aa00f3-43fd-468c-aed5-117b3b3388af"
           ],
           "x": 614.7075,
-          "y": 852.7474,
+          "y": 862.9974,
           "direction": "right"
         },
         "end": {
@@ -2175,38 +2345,12 @@
             "e2d24aee-a71d-45e7-9265-4258e5ad37e1"
           ],
           "x": 712.2434,
-          "y": 852.7256,
+          "y": 862.9756,
           "direction": "left"
         },
         "constraintName": "fk_trains_to_coaches",
         "visible": true,
         "id": "f25fbba0-bc5a-4b53-a39f-78051758a740"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "1263ec58-d6c2-454d-b68a-02e32430be42",
-          "columnIds": [
-            "be55bb71-fc88-4507-b754-062b10396118"
-          ],
-          "x": 825.2434,
-          "y": 852.7256,
-          "direction": "right"
-        },
-        "end": {
-          "tableId": "a8f98d75-a0c5-4faf-9162-fae746ffc17b",
-          "columnIds": [
-            "aa474367-cb2f-4b17-8eb9-9520a252da7a"
-          ],
-          "x": 917.8423,
-          "y": 852.9442,
-          "direction": "left"
-        },
-        "constraintName": "fk_coaches_to_seats",
-        "visible": true,
-        "id": "515228c2-a273-42b0-9ce0-e64d63f3fcd1"
       },
       {
         "identification": false,
@@ -2285,6 +2429,84 @@
         "constraintName": "fk_function_to_role_with_function",
         "visible": true,
         "id": "1171931a-5de0-47c8-bf28-1735c154e6a4"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a8f98d75-a0c5-4faf-9162-fae746ffc17b",
+          "columnIds": [
+            "f6e1c2b0-7b0d-49db-ab37-c57fdd2c610c"
+          ],
+          "x": 1258.7882,
+          "y": 721.1579,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "05ffc0ed-1ebe-4b32-957a-6c7816ebc771",
+          "columnIds": [
+            "622d7f85-c7cb-4aff-8957-5e68032a8ae6"
+          ],
+          "x": 1258.333,
+          "y": 808.1484,
+          "direction": "top"
+        },
+        "constraintName": "fk_seat_to_coach_type_with_seats",
+        "visible": true,
+        "id": "b5718db8-10be-44e9-ad30-7ad9cfce22c5"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "40f294ab-1e69-480f-ac88-549e3130d0bd",
+          "columnIds": [
+            "90fd615b-535a-45fe-bd1f-4c62420b31d0"
+          ],
+          "x": 1085.2214,
+          "y": 863.0742,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "05ffc0ed-1ebe-4b32-957a-6c7816ebc771",
+          "columnIds": [
+            "cd4df61a-d343-4262-a833-758326fc642e"
+          ],
+          "x": 1179.333,
+          "y": 863.1484,
+          "direction": "left"
+        },
+        "constraintName": "fk_coach_type_to_coach_type_with_seats",
+        "visible": true,
+        "id": "ec156827-cd9f-4daf-a151-f61fcaf3ef51"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "40f294ab-1e69-480f-ac88-549e3130d0bd",
+          "columnIds": [
+            "90fd615b-535a-45fe-bd1f-4c62420b31d0"
+          ],
+          "x": 946.2214,
+          "y": 863.0742,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1263ec58-d6c2-454d-b68a-02e32430be42",
+          "columnIds": [
+            "b8b4bf45-86f9-4e13-997a-9776f8c6cd08"
+          ],
+          "x": 851.2434,
+          "y": 862.9756,
+          "direction": "right"
+        },
+        "constraintName": "fk_coach_type_to_coach",
+        "visible": true,
+        "id": "1e26589b-b2ec-4394-b6a1-62aff2991312"
       }
     ]
   }
